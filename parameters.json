@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "username": {
+            "value": "agent"
+        },
+        "password": {
+            "value": "P#ssw0rd"
+        },
+        "dns": {
+            "value": "myopenvpn"
+        },
+        "installerUri": {
+            "value": "https://raw.githubusercontent.com/gencay/azure-vpn/master/install_openvpn.sh"
+        },
+        "installerScript": {
+            "value": "install_openvpn.sh"
+        },
+        "vmSize": {
+            "value": "Basic_A0"
+        },
+        "ubuntuOSVersion": {
+            "value": "16.04.0-LTS"
+        }
+    }
+}
