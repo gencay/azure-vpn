@@ -2,7 +2,7 @@
     .SYNOPSIS
     Deploys a resource group with OpenVPN installed on an Ubuntu VM
     .EXAMPLE
-    deploy.ps1 -location "westeurope" -dns "ubervpn" -username "agent" -password "Pa$$w0rd"
+    deploy.ps1 -location "westeurope" -dns "ubervpn" -username "agent" -password "P#ssw0rd"
 #>
 
 param(

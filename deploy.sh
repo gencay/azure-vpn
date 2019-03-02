@@ -1,6 +1,6 @@
 #!/bin/sh
 # Description   : Deploys a resource group with OpenVPN installed on an Ubuntu VM
-# Example       : deploy.ps1 -location "westeurope" -dns "ubervpn" -username "agent" -password "Pa$$w0rd"
+# Example       : deploy.ps1 -location "westeurope" -dns "ubervpn" -username "agent" -password "P#ssw0rd"
 
 resourceGroup="self-vpn"
 
