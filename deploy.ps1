@@ -6,7 +6,6 @@
 #>
 
 param(
-    [string]$resourceGroup  = "self-vpn",
     [string]$username       = (Read-Host -Prompt 'Enter a username (i.e. agent)'),
     [string]$password       = (Read-Host -Prompt 'Enter a password (i.e. P#ssw0rd)'),
     [string]$location       = (Read-Host -Prompt 'Enter a region code (i.e. westeurope)'),
@@ -16,7 +15,7 @@ param(
 Write-Host "Logging in..."
 az login
 
-$resourceGroupName = "$resourceGroup-$location"
+$resourceGroupName = "$dns-$location"
 Write-Host "Creating resource group: '$resourceGroupName' in $location"
 az group create --location $location --name $resourceGroupName
 

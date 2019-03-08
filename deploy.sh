@@ -2,8 +2,6 @@
 # Description   : Deploys a resource group with OpenVPN installed on an Ubuntu VM
 # Example       : deploy.ps1 -location "westeurope" -dns "ubervpn" -username "agent" -password "P#ssw0rd"
 
-resourceGroup="self-vpn"
-
 read -p "Enter a username (i.e. agent): " username
 read -sp "Enter a password (i.e. P#ssw0rd): " password
 echo
@@ -12,7 +10,7 @@ read -p "Enter a dns name prefix (<dns>.westeurope.cloudapp.azure.com): " dns
 
 az login
 
-resourceGroupName="$resourceGroup-$location"
+resourceGroupName="$dns-$location"
 echo "Creating resource group: '$resourceGroupName' in $location"
 az group create --location $location --name $resourceGroupName
 
